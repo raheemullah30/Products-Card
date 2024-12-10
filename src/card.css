@@ -1,0 +1,67 @@
+.product-img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transformation on hover */
+}
+
+.product-img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.card1 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 300px;
+    background-color:black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for card hover effect */
+    margin: 20px;
+    position: relative;
+}
+
+.card1:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+.card1 h1, .card1 p {
+    transition: color 0.3s ease;
+}
+
+.card1:hover h1, .card1:hover p {
+    color: yellowgreen; /* Change text color when hovering over the card */
+}
+
+.profilecard {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.addtocard-button {
+    background-color: #FF6347; /* Tomato color for the button */
+    color: white;
+    border: none;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.addtocard-button:hover {
+    background-color: #FF4500; /* Darker red on hover */
+    transform: scale(1.1); /* Slight grow effect on hover */
+}
+
+.addtocard-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #FF6347; /* Focus effect with outline */
+}
